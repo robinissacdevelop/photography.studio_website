@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Playfair+Display:wght@500&family=Roboto+Condensed&family=Roboto+Slab:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+header #main-menu {
+  background-color: white;
+  background-size: cover;
+  height: 450px;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+}
+
+nav ul {
+  /*side of list*/
+  float: left;
+}
+
+nav ul li {
+  float: left;
+  list-style: none;
+  /*to take bullet points*/
+  position: relative;
+  /*which allows us to add position:absolute inside sub items
+    inside navigation*/
+}
+
+nav ul li a {
+  display: block;
+  color: #e71111;
+  font-size: 10px;
+  padding: 22px 74px;
+  /*top&bottom ,left&right*/
+  text-decoration: none;
+}
+
+/*dropdown*/
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 4px;
+  border-radius: 0px 0px 4px 4px;
+  /*dropdown box corners*/
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  width: 200px;
+  border-radius: 8px;
+}
+
+nav ul li ul li a:hover {
+  background-color: #b9986c;
+  /*highlighting effect while droping down cursor*/
+}
+
+.container {
+  /*content bg*/
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d8d7dd;
+}
+
+.swiper {
+  width: 73%;
+  height: fit-content;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper .swiper-button-prev,
+.swiper-button-next {
+  color: violet;
+
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: #461cdd;
+}
+
+.card {
+  width: 350px;
+  height: 525px;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.card .main-content {
+  width: 100%;
+  height: 100%;
+}
+
+.card .main-content img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .overlay-content {
+  width: 100%;
+  height: 100%;
+  background-color: #ffeac9;
+  color: #080808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  transition: 0.6s;
+  top: 0%;
+  left: 100%;
+  opacity: 0.8;
+}
+
+.card:hover .overlay-content {
+  /* left:0;*/
+  transform: translateX(-100%);
+}
+
+.p{
+  height: 350px;
+}
+
+button{
+  background: #f9004d;
+  color: rgb(7, 7, 7);
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: .4s;
+}
+button:hover{
+  background: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+
+}

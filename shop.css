@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Playfair+Display:wght@500&family=Roboto+Condensed&family=Roboto+Slab:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+header #main-menu {
+    background-color: white;
+    background-size: cover;
+    height: 300px;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+}
+
+nav ul {
+    /*side of list*/
+    float: left;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    /*to take bullet points*/
+    position: relative;
+    /*which allows us to add position:absolute inside sub items
+    inside navigation*/
+}
+
+nav ul li a {
+    display: block;
+    color: #461cdd;
+    font-size: 10px;
+    padding: 22px 74px;
+    /*top&bottom ,left&right*/
+    text-decoration: none;
+}
+
+/*dropdown*/
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 4px;
+    border-radius: 0px 0px 4px 4px;
+    /*dropdown box corners*/
+
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 200px;
+    border-radius: 8px;
+}
+
+nav ul li ul li a:hover {
+    background-color: #b9986c;
+    /*highlighting effect while droping down cursor*/
+}
+
+.center {
+    text-align: center;
+}
+
+.row-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.row img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.row h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.row p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}

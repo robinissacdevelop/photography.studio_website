@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>photography studio website / wedding</title>
+    <link rel="stylesheet" href="wedding.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div id="main-menu">
+            <nav id="menu-area">
+                <ul>
+                    <li><a href="#">SERVICE</a>
+                        <ul class="submenu-1">
+                            <li><a href="#">WEDDING</a></li>
+                            <li><a href="family.html">FAMILY</a></li>
+                            <li><a href="newborn.html">NEWBORN</a></li>
+                            <li><a href="couple.html">COUPLE/ENGAGEMENT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="#">INFO</a>
+                        <ul class="submenu-2">
+                            <li><a href="photographers.html">THE PHOTOGRAPHERS</a></li>
+                            <li><a href="goodword.html">GOOD WORDS</a></li>
+                            <li><a href="mentoring.html">MENTORING & WORKSHOPS</a></li>
+                            <li><a href="albums.html">ALBUMS</a></li>
+                        </ul>
+                    </li>
+                    <a href="home.html">
+                        <img src="imges/Picsart_23-03-03_16-21-17-085 (1).png" width="150" height="100"
+                            alt="Navigation Image">
+                    </a>
+                    <li><a href="#">ELOPMENTS</a>
+                        <ul class="submenu-3">
+                            <li><a href="elopments.html">ELOPMENTS</a></li>
+                            <li><a href="couple.html">COUPLES</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.php">CONTACT</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </nav>
+            <br>
+    </header>
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="imges/pexels-pixabay-265856.jpg"></div>
+                <div class="swiper-slide"><img src="imges/pexels-photo-752842.jpeg"></div>
+                <div class="swiper-slide"><img src="imges/pexels-oleksandr-pidvalnyi-341372.jpg"></div>
+                <div class="swiper-slide"><img src="imges/pexels-photo-1683989.webp"></div>
+                <div class="swiper-slide"><img src="imges/pexels-photo-1646730.webp"></div>
+                <div class="swiper-slide"><img src="imges/pexels-photo-1779491.jpeg"></div>
+                <div class="swiper-slide"><img src="imges/pexels-photo-1779414.jpeg"></div>
+                <div class="swiper-slide"><img src="imges/pexels-photo-1444442.jpeg"></div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <div style="text-align:center;">
+        <H3>MOMENTS YOU WILL REMEMBER</H3>
+    </div>
+    <p style="text-align:center;">
+        If you are inside and looking at the website here, maybe it means that you are newly engaged...? And then I
+        reckon that this isn't the first website with wedding photos you've looked at either, and that's good! It's a
+        good idea to have a look around and be sure of the kind of style and expression you want in your wedding photos.
+        I have a documentary style and a mix of portraits and natural moments bring out all sides of your big day.
+
+        Feel free to take a look under Blog - Weddings to see some of the weddings I have photographed, and Info -
+        Photographers to read more about me, and about team photographer ROBIN ISSAC.<br>
+
+        Being allowed to be the one to immortalize the big day of a bride and groom is a great honor. And a big
+        responsibility. There is a lot going on this day, and I want to be there and document small and big moments,
+        while being as least visible as possible. My experience provides the security needed on one of the biggest days
+        of their lives. Then you can only focus on enjoying your day to the fullest with family and friends!<br>
+
+        I live in chennai, and team photographer robin issac lives in chennai. We take assignments in and around Molde
+        and Bergen, and preferably elsewhere in the country. Costs for travel/accommodation will then be added.<br>
+
+    </p>
+    <div style="text-align:center;">
+        <H3>WEDDING PACKAGES</H3>
+        <H5>PRICES FOR 2023. CONTACT FOR COMPLETE PRICE LIST AND INFORMATION</H5>
+    </div>
+    <div class="card">
+        <div class="main-content">
+            <img src="imges/pexels-photo-2781104.jpeg" alt="price">
+            <div class="text">Text</div>
+        </div>
+        <div class="overlay-content">
+            <p>HALF DAY PHOTOGRAPHY - FIVE HOURS = INR.50000<BR>
+                MARRIAGE - WEDDING+PORTRAIT = INR. 100000<BR>
+                    PORTRAIT - PORTRAIT PHOTO 2HOURS =INR.12000
+            </p>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
